@@ -4,11 +4,11 @@ import Select from '../Select/Select.js';
 import Card from '../Card/Card.js';
 
 export default function Main() {
-  const { pokemon, types, handleTypeChange } = usePokemon();
+  const { pokemon, types, handleTypeChange, loading } = usePokemon();
   return (
     <>
       <Select types={types} handleTypeChange={handleTypeChange} />
-      <Card pokemon={pokemon} />
+      <Card pokemon={pokemon} loading={loading} />
     </>
   );
 }
