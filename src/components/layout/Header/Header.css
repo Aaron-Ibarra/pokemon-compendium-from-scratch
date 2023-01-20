@@ -1,0 +1,10 @@
+header {
+  height: 80px;
+  background-color: rgb(45, 109, 100);
+  color: yellow;
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  padding-left: 40%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
