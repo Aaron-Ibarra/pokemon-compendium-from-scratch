@@ -1,11 +1,28 @@
 .pokename {
-  color: purple;
+  color: rgb(184, 233, 184);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+    sans-serif;
 }
 
 .card {
   border: 5px solid black;
+  width: fit-content;
+  background-color: gray;
+  padding: 15px;
 }
 
 img {
   width: 200px;
+  border: 2px gold solid;
+  background-color: antiquewhite;
+}
+
+.details {
+  font-weight: bold;
+}
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
 }
