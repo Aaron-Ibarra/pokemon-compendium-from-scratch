@@ -1,3 +1,11 @@
 .pokename {
   color: purple;
 }
+
+.card {
+  border: 5px solid black;
+}
+
+img {
+  width: 200px;
+}

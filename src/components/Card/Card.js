@@ -6,10 +6,13 @@ export default function Card({ pokemon, loading }) {
   return (
     <div>
       {pokemon.map((poke) => (
-        <h2 className="pokename" key={poke._id}>
-          {poke.pokemon} {poke.type_1} {poke.type_2}
-        </h2>
-        // <img key={poke.url_image} src={`${poke.url_image}`}/>
+        <div className="card" key={poke._id}>
+          <h2 className="pokename">{poke.pokemon}</h2>
+          <p className="details">
+            {poke.type_1} {poke.type_2}
+          </p>
+          <img src={`${poke.url_image}`} />
+        </div>
       ))}
     </div>
   );
