@@ -19,7 +19,7 @@ export function usePokemon() {
       setTypes(data);
     };
     fetchData();
-  });
+  }, []);
 
   const handleTypeChange = async (type) => {
     const data = await fetchPokemon(type);

@@ -4,10 +4,10 @@ import Select from '../Select/Select.js';
 import Card from '../Card/Card.js';
 
 export default function Main() {
-  const { pokemon, types } = usePokemon();
+  const { pokemon, types, handleTypeChange } = usePokemon();
   return (
     <>
-      <Select types={types} />
+      <Select types={types} handleTypeChange={handleTypeChange} />
       <Card pokemon={pokemon} />
     </>
   );
