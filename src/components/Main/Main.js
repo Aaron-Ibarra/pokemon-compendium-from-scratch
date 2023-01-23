@@ -2,6 +2,7 @@ import React from 'react';
 import { usePokemon } from '../../hooks/pokemon.js';
 import Select from '../Select/Select.js';
 import Card from '../Card/Card.js';
+import Query from '../Query/Query.js';
 import './Main.css';
 
 export default function Main() {
@@ -9,7 +10,8 @@ export default function Main() {
   return (
     <>
       <Select types={types} handleTypeChange={handleTypeChange} />
-      <div className='cardsContainer'>
+      <Query />
+      <div className="cardsContainer">
         <Card pokemon={pokemon} loading={loading} />
       </div>
     </>
